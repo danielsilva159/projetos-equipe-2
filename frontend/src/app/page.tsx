@@ -1,6 +1,7 @@
 import LogoDefault from "@/components/template/LogoDefault";
 import LogoLarge from "@/components/template/LogoLarge";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -17,6 +18,9 @@ export default function Home() {
         <div className="flex items-center">
           <LogoLarge />
           <LogoDefault />
+        </div>
+        <div className="flex flex-col">
+          <Link href="/password-reset" className="hover:underline">Esqueceu a senha?</Link>
         </div>
         <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2">
