@@ -3,7 +3,7 @@ import React from 'react';
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   startIcon?: React.ReactNode; // Ícone no início do input
   endIcon?: React.ReactNode;
-  textLabel: string; // Ícone no final do input
+  textLabel?: string; // Ícone no final do input
 }
 
 const InputText: React.FC<InputProps> = ({ textLabel, startIcon, endIcon, className, ...props }) => {
