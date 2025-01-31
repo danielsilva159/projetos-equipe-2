@@ -33,7 +33,7 @@ export default function Login() {
         <div className="flex flex-col gap-3">
           <span>
             Ainda não possui conta?{' '}
-            <Link href={''} className="text-[#22C55E]">
+            <Link href={'/user-registration'} className="text-[#22C55E]">
               Cadastre-se aqui
             </Link>
           </span>
