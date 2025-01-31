@@ -1,5 +1,6 @@
 import React from 'react';
 import { AiOutlineMail } from 'react-icons/ai';
+import InputText from './inputText';
 
 export default function PasswordReset() {
   return (
@@ -8,18 +9,8 @@ export default function PasswordReset() {
         <h2 className="text-neutral-100 text-center text-lg font-semibold mb-6">Solicitar troca de senha</h2>
         <form>
           <div className="mb-4">
-            <label htmlFor="email" className="block text-zinc-400 text-sm mb-1">
-              Email
-            </label>
-            <div className="flex items-center bg-black rounded-md">
-              <input
-                type="email"
-                id="email"
-                className="flex-1 bg-transparent text-white px-4 py-2 focus:outline-none"
-              />
-              <span className="px-3 text-zinc-400">
-                <AiOutlineMail className="h-5 w-5" />
-              </span>
+            <div className="flex items-center">
+              <InputText textLabel="Email" type="email" endIcon={<AiOutlineMail className="h-5 w-5" />} />
             </div>
           </div>
           <button
@@ -32,4 +23,4 @@ export default function PasswordReset() {
       </div>
     </div>
   );
-};
+}

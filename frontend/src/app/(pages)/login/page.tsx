@@ -1,3 +1,4 @@
+'use client';
 import LogoLarge from '@/app/components/LogoLarge';
 import InputText from '@/app/components/inputText';
 import Link from 'next/link';
@@ -25,7 +26,7 @@ export default function Login() {
           <span className="px-3 text-gray-500 text-sm font-medium">OU</span>
           <hr className="flex-grow border-t border-gray-300" />
         </div>
-        <div className="flex items-center my-4">
+        <div className="flex items-center justify-center my-4">
           <Link href={''} className="flex justify-center items-center w-8 h-8 rounded-2xl bg-[#EF4444]">
             G
           </Link>
