@@ -8,14 +8,13 @@ export default function PasswordReset() {
         <h2 className="text-neutral-100 text-center text-lg font-semibold mb-6">Solicitar troca de senha</h2>
         <form>
           <div className="mb-4">
-            <label htmlFor="email" className="block text-zinc-400 text-sm mb-2">
+            <label htmlFor="email" className="block text-zinc-400 text-sm mb-1">
               Email
             </label>
             <div className="flex items-center bg-black rounded-md">
               <input
                 type="email"
                 id="email"
-                placeholder="Digite seu email"
                 className="flex-1 bg-transparent text-white px-4 py-2 focus:outline-none"
               />
               <span className="px-3 text-zinc-400">
