@@ -1,9 +1,9 @@
 const usuarioLogado = {
   id: 1,
+  name: 'Eu usuário',
   email: 'usuario@gmail.com',
-  name: 'Usuario',
   avatar:
-    'https://img.freepik.com/vetores-premium/icone-plano-de-usuario-anonimo-ilustracao-vetorial-com-sombra-longa_520826-1932.jpg'
+    'https://banner2.cleanpng.com/20180715/zjo/kisspng-logo-brand-font-swathe-5b4b6462ce0ab8.900223241531667554844.jpg'
 }
 
 export default usuarioLogado
