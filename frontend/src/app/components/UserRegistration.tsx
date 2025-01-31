@@ -1,11 +1,11 @@
 import React from 'react';
 import { AiOutlineMail } from 'react-icons/ai';
-import InputText from './InputText';
 import { GoChevronDown } from 'react-icons/go';
 import ReactCountryFlag from 'react-country-flag';
 import { MdLockOutline } from 'react-icons/md';
 import Link from 'next/link';
 import Image from 'next/image';
+import InputText from './inputText';
 
 export default function PasswordReset() {
   return (
@@ -15,23 +15,21 @@ export default function PasswordReset() {
         <form>
           <InputText
             textLabel={'Nome'}
-            startIcon={
-              <Image src="/Vector.png" alt="Ícone personalizado" width={20} height={20} />
-            }
+            startIcon={<Image src="/Vector.png" alt="Ícone personalizado" width={20} height={20} />}
             className="mt-2 mb-2"
           />
-          <InputText textLabel={'Email'} startIcon={<AiOutlineMail className="h-5 w-5" />} className='mt-2 mb-2' />
-          <InputText textLabel={'Senha'} startIcon={<MdLockOutline className="h-5 w-5" />} className='mt-2 mb-2' />
-          <InputText textLabel={'Senha'} startIcon={<MdLockOutline className="h-5 w-5" />} className='mt-2 mb-2' />
-          <InputText 
+          <InputText textLabel={'Email'} startIcon={<AiOutlineMail className="h-5 w-5" />} className="mt-2 mb-2" />
+          <InputText textLabel={'Senha'} startIcon={<MdLockOutline className="h-5 w-5" />} className="mt-2 mb-2" />
+          <InputText textLabel={'Senha'} startIcon={<MdLockOutline className="h-5 w-5" />} className="mt-2 mb-2" />
+          <InputText
             textLabel={''}
             startIcon={
               <div style={{ display: 'flex', alignItems: 'center' }}>
-                  <ReactCountryFlag countryCode="BR" svg style={{ width: '1.5em', height: '1.5em', marginRight: '8px' }} />
-                  <GoChevronDown />
+                <ReactCountryFlag countryCode="BR" svg style={{ width: '1.5em', height: '1.5em', marginRight: '8px' }} />
+                <GoChevronDown />
               </div>
             }
-            className='mt-2 mb-2'
+            className="mt-2 mb-2"
           />
           <button
             type="submit"
@@ -39,7 +37,7 @@ export default function PasswordReset() {
           >
             Cadastrar-se
           </button>
-          <div className='flex gap-1 mt-2 mb-2 justify-center'>
+          <div className="flex gap-1 mt-2 mb-2 justify-center">
             <Link href="/" className="hover:underline mb-2">
               Já possui conta? <span className="text-[#22C55E]">Faça Login</span>
             </Link>
@@ -48,4 +46,4 @@ export default function PasswordReset() {
       </div>
     </div>
   );
-};
+}
