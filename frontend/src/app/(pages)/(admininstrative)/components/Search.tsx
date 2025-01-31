@@ -14,7 +14,7 @@ const InputSearch: React.FC<SearchProps> = ({ placeholder, endIcon, className, .
   return (
     <div className={`relative ${className}`}>
       <input
-        className={`transition-all duration-200 ease-out h-10 bg-zinc-800 rounded-full p-0 text-zinc-400 focus:border-zinc-600 ${isFocused ? 'w-96' : 'w-10'}`}
+        className={`transition-all duration-200 ease-out h-10 bg-zinc-900 rounded-full p-0 text-zinc-400 cursor-pointer ${isFocused ? 'w-96' : 'w-10'}`}
         type="text"
         placeholder={placeholder}
         {...props}

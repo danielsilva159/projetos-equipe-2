@@ -8,7 +8,7 @@ const Container = (props: PropsWithChildren) => {
       <Header />
       <div className="flex h-full">
         <Menu />
-        <div className="bg-zinc-800 w-full rounded-md p-2 mr-10">{props.children}</div>
+        <div className="bg-zinc-900 w-full rounded-md p-2 mr-10">{props.children}</div>
       </div>
     </div>
   )

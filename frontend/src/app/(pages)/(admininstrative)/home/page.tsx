@@ -1,11 +1,12 @@
+const ViewUsers = () => {
 
-
-const HomeAdministrative = () => {
   return ( 
-    <div>
-      <h1>Home administrativa</h1>
+    <div className="flex w-full items-start justify-center pt-11 px-32">
+      <div className="w-full justify-center flex">
+    
+      </div>
     </div>
    );
 }
  
-export default HomeAdministrative;
+export default ViewUsers;
